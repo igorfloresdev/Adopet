@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="login">
     <PageHeader />
   </div>
 </template>
@@ -15,3 +15,10 @@ export default defineComponent({
   }
 })
 </script>
+<style scoped>
+  .login {
+    width:100vw;
+    height: 100vh;
+    background-color: #3772FF;
+  }
+</style>
