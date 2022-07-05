@@ -2,7 +2,7 @@
   <div class="login">
     <div class="container-fluid">
       <div class="row">
-        <PageHeader :pawns_pic="true" />
+        <PageHeader :profile_pic="true" />
       </div>
     </div>
   </div>
@@ -13,7 +13,7 @@ import { defineComponent } from 'vue'
 import PageHeader from '@/components/PageHeader.vue'
 
 export default defineComponent({
-  name: 'LoginView',
+  name: 'ProfileView',
   components: {
     PageHeader
   }

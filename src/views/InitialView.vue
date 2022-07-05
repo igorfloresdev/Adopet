@@ -2,7 +2,7 @@
   <div class="login">
     <div class="container-fluid">
       <div class="row">
-        <PageHeader :pawns_pic="true" />
+        <PageHeader />
       </div>
     </div>
   </div>
@@ -13,7 +13,7 @@ import { defineComponent } from 'vue'
 import PageHeader from '@/components/PageHeader.vue'
 
 export default defineComponent({
-  name: 'LoginView',
+  name: 'InitialView',
   components: {
     PageHeader
   }
@@ -23,5 +23,6 @@ export default defineComponent({
   .login {
     width:100vw;
     height: 100vh;
+    background-color: #3772FF;
   }
 </style>

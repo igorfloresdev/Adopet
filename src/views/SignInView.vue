@@ -13,7 +13,7 @@ import { defineComponent } from 'vue'
 import PageHeader from '@/components/PageHeader.vue'
 
 export default defineComponent({
-  name: 'LoginView',
+  name: 'SignInView',
   components: {
     PageHeader
   }
