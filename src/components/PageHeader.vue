@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main row">
     <nav>
       <ul>
         <li>
@@ -19,7 +19,7 @@
       </ul>
     </nav>
     <div class="pawns" v-if="pawns_pic">
-      <svg width="135" height="227" viewBox="0 0 135 227" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="position-absolute" width="135" height="227" viewBox="0 0 135 227" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0_530_90)">
       <path d="M85.3036 45.8384C82.1144 49.7099 76.5419 57.633 78.5947 61.1508C80.6297 64.6284 83.6894 63.922 83.6894 63.922C83.6894 63.922 78.8586 70.5332 81.7258 74.8263C85.2685 80.1338 90.3433 77.4416 90.3433 77.4416C90.3433 77.4416 88.0418 82.7069 93.596 85.8462C98.0915 88.3877 104.331 83.0854 104.331 83.0854C104.331 83.0854 103.85 86.1933 107.475 87.9601C111.135 89.7461 118.617 83.6062 122.24 80.1392C126.238 76.3116 172.416 27.8477 172.416 27.8477L132.736 -8.98898C132.736 -8.98898 88.8236 41.5672 85.3036 45.8384Z" fill="#DEB180"/>
       <path d="M100.757 64.9335C106.61 70.366 116.147 70.903 115.927 64.9629C115.706 59.0229 110.172 61.3416 106.752 58.1658C103.525 55.1563 104.824 50.3538 100.338 49.6306C95.8531 48.9074 94.126 58.7763 100.757 64.9335Z" fill="#2D2B2C"/>
@@ -111,7 +111,7 @@
       </svg>
     </div>
     <div class="profile" v-if="profile_pic">
-      <img src="@/assets/icons/profile.png">
+      <img class="position-absolute" src="@/assets/icons/profile.png">
     </div>
   </div>
 </template>
@@ -129,12 +129,9 @@ export default defineComponent({
 </script>
 <style scoped>
   .main {
-    background: url('@/assets/background/top-form.svg') no-repeat;
-    position: fixed;
-    top:0;
-    left: 0;
-    height: 36vh;
-    width: 100vw;
+    background: url(@/assets/background/top-form.svg) no-repeat;
+    height: 333px;
+    margin-bottom: -160px
   }
 
   nav ul {
@@ -151,19 +148,13 @@ export default defineComponent({
     text-decoration: none;
   }
 
-  .pawns {
-    position: fixed;
+  .pawns svg{
     top: 0;
     right:0;
   }
 
-  .profile {
-    position: fixed;
+  .profile img{
     top: 40px;
     right: 37px;
-  }
-
-  .profile img{
-    width: 40px;
   }
 </style>
